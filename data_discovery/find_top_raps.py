@@ -34,7 +34,6 @@ def extract_fields(str):
   artist_match = ' [a-zA-Z0-9.,&+;\'$\- ]+ -'
   artist = re.findall(artist_match, str)[0][:-1].strip()
 
-
   start_index = str.find(artist) + len(artist) + 4
   title = str[start_index:-1]
   if title.endswith('"'):
