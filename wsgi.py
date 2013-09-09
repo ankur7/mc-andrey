@@ -4,7 +4,7 @@ application = app = Flask('wsgi')
 
 @app.route('/')
 def reroute():
-  return '<h3>Please enter the number of lines to generate, like <br><pre>https://mcandrey.ngrok.com/10</pre></h3>'
+  return '<h3>Please enter the number of lines to generate, like <br><pre>https://mcandrey.ngrok.com/10</pre></h3><h4>Disclaimer: lyrics have not been filtered for content</h4>'
 @app.route('/<lines>')
 def serve_rhyme(lines):
   if int(lines) > 30:
